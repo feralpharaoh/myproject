@@ -1,6 +1,6 @@
 package strings
 
-func RemoveChar(sourceText string, unwantedChar string) []rune {
+func RemoveChar(sourceText string, unwantedChar string) string {
 	sourceRunes := []rune(sourceText)
 	removeRunes := []rune(unwantedChar)
 	remove := removeRunes[0]
@@ -13,5 +13,5 @@ func RemoveChar(sourceText string, unwantedChar string) []rune {
 			finalText = append(finalText, currChar)
 		}
 	}
-	return finalText
+	return string(finalText)
 }

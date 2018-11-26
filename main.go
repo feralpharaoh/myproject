@@ -17,5 +17,5 @@ func main() {
 	//Prints the results of the three separate tests
 	fmt.Printf("Are the words 'feasts' and 'safest' an anagram of each other? --> %t\n", anagramTest)
 	fmt.Printf("Is the word 'racecar' a palindrome? --> %t\n", palindromeTest)
-	fmt.Printf("What is the resulting text after ommiting the given character? --> %c", finalText)
+	fmt.Printf("What is the resulting text after ommiting the given character? --> %s", finalText)
 }
