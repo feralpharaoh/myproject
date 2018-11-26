@@ -13,7 +13,7 @@ func main() {
 	//  finalText = strings.RemoveChar("HotPockets are the shiznit... super delicious!", "s")
 
 	//Prints the results of the three separate tests
-	fmt.Println("Are these two words an anagram of each other? --> %t", anagramTest)
+	fmt.Printf("Are these two words an anagram of each other? --> %t\n", anagramTest)
 	//  fmt.Println("Is the provided word a palindrome? --> %t", palindromeTest)
 	//  fmt.Println("What is the resulting text after ommiting the given character? --> %t", finalText)
 }
