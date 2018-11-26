@@ -22,7 +22,7 @@ func IsAnagram(sourceText string, compText string) bool {
 			if exist == 0 { //if this character is not already represented in the map, count how many exist and add key to map
 				// count how many times this character shows up in the string
 				count := 0
-				for j := 0; j < len(sourceRunes); i++ {
+				for j := 0; j < len(sourceRunes); j++ {
 					if sourceRunes[j] == currentChar {
 						count++
 					}
@@ -41,7 +41,7 @@ func IsAnagram(sourceText string, compText string) bool {
 				if exist == 0 { //if this character is not already represented in the map, count how many exist and add key to map
 					// count how many times this character shows up in the string
 					count := 0
-					for j := 0; j < len(compRunes); i++ {
+					for j := 0; j < len(compRunes); j++ {
 						if compRunes[j] == currentChar {
 							count++
 						}
