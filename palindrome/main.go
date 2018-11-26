@@ -1,5 +1,6 @@
-package main
+package palindrome
 
-func main() {
+func IsPalindrome(possiblePalindrom string) bool {
 
+	return false
 }

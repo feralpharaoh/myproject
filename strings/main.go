@@ -1,5 +1,8 @@
-package main
+package strings
 
-func main() {
+var resultText string
 
+func RemoveChar(sourceText string, unwantedChar string) string {
+
+	return (resultText)
 }

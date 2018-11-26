@@ -1,12 +1,6 @@
 package anagaram
 
-var false bool
-
-func main() {
-
-}
-
-func IsAnagram(testtext string, comptext string) bool {
+func IsAnagram(testText string, compText string) bool {
 
 	return false
 }
