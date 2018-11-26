@@ -1,12 +1,12 @@
-package main
+package anagaram
 
-var isanagram bool
+var false bool
 
 func main() {
 
 }
 
-func anagramtest(starttext string) bool {
+func IsAnagram(testtext string, comptext string) bool {
 
-	return (isanagram)
+	return false
 }
