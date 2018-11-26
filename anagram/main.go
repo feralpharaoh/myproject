@@ -3,15 +3,16 @@ package anagram
 func IsAnagram(sourceText string, compText string) bool {
 
 	testResult := true
+	// convert strings to slices of runes
 	sourceRunes := []rune(sourceText)
 	compRunes := []rune(compText)
-	//Compares length of each input strings
+	//Compares length of each input string
 	lengthCheck := len(sourceText) == len(compText)
 
 	//If strings are equal length, create maps of characters and compare strings' key values
 	if lengthCheck == true {
 
-		//initialize source and comparison string maps
+		//initialize source and comparison rune maps
 		sourceMap := make(map[rune]int)
 		compMap := make(map[rune]int)
 
