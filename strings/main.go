@@ -4,14 +4,23 @@ func RemoveChar(sourceText string, unwantedChar string) string {
 	sourceRunes := []rune(sourceText)
 	removeRunes := []rune(unwantedChar)
 	remove := removeRunes[0]
-	finalText := []rune(nil)
+	finalText := []rune{}
 
 	//check each character from sourceText and add to result if not selected character
-	for i := 0; i < len(sourceText); i++ {
-		currChar := sourceRunes[i]
-		if currChar != remove { // if this character does not match character selected for removal, add it to the new slice
-			finalText = append(finalText, currChar)
+	for _, c := range sourceRunes {
+		if c != remove { // if this character does not match character selected for removal, add it to the new slice
+			finalText = append(finalText, c)
 		}
 	}
 	return string(finalText)
+}
+
+func ReplaceChar(sourceText string, charToSwap rune, charToUse rune) string {
+	sourceRunes := []rune(sourceText)
+	for i, c := range sourceRunes {
+		if c == charToSwap {
+			sourceRunes[i] = charToUse
+		}
+	}
+	return string(sourceRunes)
 }
